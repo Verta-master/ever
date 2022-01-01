@@ -1,6 +1,7 @@
 .promo {
+  min-height: 324px;
   padding-top: 12px;
-  padding-bottom: 195px;
+  padding-bottom: 15px;
   background-image: url(../img/images/bg-main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +25,18 @@
   text-transform: uppercase;
 }
 .promo__slogan {
+  position: relative;
   margin: 0;
   font-weight: 700;
   font-style: italic;
+  
+  &::after {
+    content: "?";
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    font-size: 28px;
+    line-height: 1;
+    font-style: italic;
+  }
 }
